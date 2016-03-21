@@ -1,0 +1,6 @@
+#!/bin/sh
+# -*- mode: sh -*-
+# vi: set ft=sh:
+# Hack to let us port forward JMS so Karaf works.
+ssh-keygen -f /root/.ssh/id_rsa -t rsa -N ''
+cat /root/.ssh/id_rsa.pub > /root/.ssh/authorized_keys
