@@ -1,9 +1,9 @@
 # Islandora CLAW: Karaf Docker Image
 
-[![Docker Stars](https://img.shields.io/docker/stars/islandora-claw/karaf.svg)](https://hub.docker.com/r/islandora-claw/karaf/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/islandora-claw/karaf.svg)](https://hub.docker.com/r/islandora-claw/karaf/)
-[![Image Size](https://img.shields.io/imagelayers/image-size/islandora-claw/karaf/latest.svg)](https://imagelayers.io/?images=islandora-claw/karaf:latest)
-[![Image Layers](https://img.shields.io/imagelayers/layers/islandora-claw/karaf/latest.svg)](https://imagelayers.io/?images=islandora-claw/karaf:latest)
+[![Docker Stars](https://img.shields.io/docker/stars/islandora/claw-karaf.svg)](https://hub.docker.com/r/islandora/claw-karaf/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/islandora/claw-karaf.svg)](https://hub.docker.com/r/islandora/claw-karaf/)
+[![Image Size](https://img.shields.io/imagelayers/image-size/islandora/claw-karaf/latest.svg)](https://imagelayers.io/?images=islandora/claw-karaf:latest)
+[![Image Layers](https://img.shields.io/imagelayers/layers/islandora/claw-karaf/latest.svg)](https://imagelayers.io/?images=islandora/claw-karaf:latest)
 
 ### Introduction
 
@@ -25,7 +25,7 @@ Based on the [Maven Docker Image](https://github.com/Islandora-CLAW/docker-maven
 
 **Example:**
 ```bash
-docker build --build-arg "KARAF_VERSION=4.0.4" -t islandora-claw/karaf .
+docker build --build-arg "KARAF_VERSION=4.0.4" -t islandora/claw-karaf .
 ```
 
 ### Environment Variables
@@ -36,7 +36,7 @@ docker build --build-arg "KARAF_VERSION=4.0.4" -t islandora-claw/karaf .
 
 **Example (foreground, port 8080, auto-remove):**
 ```bash
-docker run --rm -ti -p 8181:8181 islandora-claw/karaf
+docker run --rm -ti -p 8181:8181 islandora/claw-karaf
 ```
 
 ### Commands
