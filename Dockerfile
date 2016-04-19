@@ -1,4 +1,4 @@
-FROM islandora-claw/maven
+FROM islandora/claw-maven
 MAINTAINER Nigel Banks <nigel.g.banks@gmail.com>
 
 LABEL "License"="MIT" \
