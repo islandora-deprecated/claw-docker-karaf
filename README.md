@@ -2,22 +2,20 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/islandora/claw-karaf.svg)](https://hub.docker.com/r/islandora/claw-karaf/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/islandora/claw-karaf.svg)](https://hub.docker.com/r/islandora/claw-karaf/)
-[![Image Size](https://img.shields.io/imagelayers/image-size/islandora/claw-karaf/latest.svg)](https://imagelayers.io/?images=islandora/claw-karaf:latest)
-[![Image Layers](https://img.shields.io/imagelayers/layers/islandora/claw-karaf/latest.svg)](https://imagelayers.io/?images=islandora/claw-karaf:latest)
 
-### Introduction
+## Introduction
 
 Defines the Karaf Docker image. 
 
 Based on the [Maven Docker Image](https://github.com/Islandora-CLAW/docker-maven).
 
-### Includes
+## Includes
 
 * Karaf 4
 * Java 8
 * Open SSH
 
-### Build Arguments
+## Build Arguments
 
 | Variable      | Required | Default |
 |---------------|----------|---------|
@@ -28,7 +26,7 @@ Based on the [Maven Docker Image](https://github.com/Islandora-CLAW/docker-maven
 docker build --build-arg "KARAF_VERSION=4.0.4" -t islandora/claw-karaf .
 ```
 
-### Environment Variables
+## Environment Variables
 
 | Variable   | Required | Default                                                               |
 |------------|----------|-----------------------------------------------------------------------|
@@ -39,30 +37,27 @@ docker build --build-arg "KARAF_VERSION=4.0.4" -t islandora/claw-karaf .
 docker run --rm -ti -p 8181:8181 islandora/claw-karaf
 ```
 
-### Commands
+## Commands
 
-For convenience a number of commands are provided in the [commands](/commands)
-folder.
+For convenience a number of commands are provided in the [commands](/commands) folder.
 
 | Command | Arguments | Defaults | Notes                                       |
 |---------|-----------|----------|---------------------------------------------|
 | build   |           |          | Build this image with the default settings. |
 
-### Notes
+## Notes
 
-Eventually we will support running on either Open JDK or Oracle JDK, but
-for the moment it only supports Open JDK.
+Eventually we will support running on either OpenJDK or Oracle JDK, but for the moment it only supports Open JDK.
 
-If you experience issues with zombie Java processes not getting reaped, likely
-this is the result of a Kernel bug:
+If you experience issues with zombie Java processes not getting reaped, likely this is the result of a Kernel bug:
 
-https://github.com/docker/docker/issues/18180
+* https://github.com/docker/docker/issues/18180
 
 Specifically follow the instructions in this comment:
 
-https://github.com/docker/docker/issues/18180#issuecomment-187583209
+* https://github.com/docker/docker/issues/18180#issuecomment-187583209
 
-### Maintainers/Sponsors
+## Maintainers/Sponsors
 
 * UPEI
 * discoverygarden inc.
@@ -79,21 +74,14 @@ https://github.com/docker/docker/issues/18180#issuecomment-187583209
 Current maintainers:
 
 * [Nigel Banks](https://github.com/nigelgbanks)
+* [Nick Ruest](https://github.com/ruebot)
 
-### Development
+## Development
 
-If you would like to contribute, please get involved with the
-[Islandora Fedora 4 Interest Group](https://github.com/Islandora/Islandora-Fedora4-Interest-Group).
-We love to hear from you!
+If you would like to contribute, please get involved by attending our weekly [Tech Call](https://github.com/Islandora-CLAW/CLAW/wiki). We love to hear from you!
 
-If you would like to contribute code to the project, you need to be covered by
-an Islandora Foundation
-[Contributor License Agreement](http://islandora.ca/sites/default/files/islandora_cla.pdf)
-or
-[Corporate Contributor Licencse Agreement](http://islandora.ca/sites/default/files/islandora_ccla.pdf).
-Please see the [Contributors](http://islandora.ca/resources/contributors) pages
-on Islandora.ca for more information.
+If you would like to contribute code to the project, you need to be covered by an Islandora Foundation [Contributor License Agreement](http://islandora.ca/sites/default/files/islandora_cla.pdf) or [Corporate Contributor Licencse Agreement](http://islandora.ca/sites/default/files/islandora_ccla.pdf). Please see the [Contributors](http://islandora.ca/resources/contributors) pages on Islandora.ca for more information.
 
-### License
+## License
 
 [MIT](https://opensource.org/licenses/MIT)
