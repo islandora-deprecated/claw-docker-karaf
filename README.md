@@ -47,8 +47,6 @@ For convenience a number of commands are provided in the [commands](/commands) f
 
 ## Notes
 
-Eventually we will support running on either OpenJDK or Oracle JDK, but for the moment it only supports Open JDK.
-
 If you experience issues with zombie Java processes not getting reaped, likely this is the result of a Kernel bug:
 
 * https://github.com/docker/docker/issues/18180
